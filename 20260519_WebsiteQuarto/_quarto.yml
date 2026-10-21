@@ -74,10 +74,10 @@ format:
     # THEME: Here I'm using "flatly", which is one of Quarto's built-in Bootstrap themes.
     
     # Full list: quarto.org/docs/output-formats/html-themes.html
-    theme: flatly
+    # theme: flatly
 
     # Ready to customise colours and fonts? Add a SCSS file on top:
-    # theme: [flatly, styles.scss]
+    theme: [flatly, styles.scss]
 
 # TABLE OF CONTENTS
     toc: true                 # show TOC on every page

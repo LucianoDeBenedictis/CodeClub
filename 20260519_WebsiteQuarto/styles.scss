@@ -1,0 +1,56 @@
+// hello
+
+/*-- scss.defaults --*/
+
+$puke: #8ca53b;
+$pinky: #ffaae0;
+
+$primary: $puke;
+
+$secondary: #3b66a5;
+$body-bg: #ffffff;
+$body-color: #3d3d3d;
+
+$link-color: $pinky;
+$link-color-hover: #47ffa7;
+
+@import url('https://fonts.googleapis.com/css2?family=Copse&display=swap');
+
+$font-family: "Copse", serif;
+$h1h2h3font-weight: 400;
+$font-style: normal;
+$font-size: 18px;
+
+$navbar-bg: $puke;
+$code-block-bg: #47ffa7;
+$code-block-border: $pinky;
+
+/*-- scss:rules --*/
+
+h2 { border-bottom: 3px solid $primary;} //dotted
+
+.callout-tip {background-color: #b50000;}
+
+//custom class
+
+.my-box {
+  background-color: $code-block-bg;
+  border-left: 5px dotted $secondary;
+  padding: 10px;
+}
+
+.navbar .nav-link { text-transform: uppercase;}
+
+.btn:hover {transform: rotate(0.5turn) skew(30deg) scale(2, 5);}
+
+.btn-outline-primary{
+  border-width: 3px;
+}
+
+.callout{
+  border-right-width: 6px;
+  &.callout-note {
+    border-right-color: $primary;
+    .callout-title {font-weight: 200;}
+  }
+}
